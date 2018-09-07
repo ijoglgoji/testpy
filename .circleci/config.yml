@@ -5,7 +5,7 @@ jobs:
       - image: circleci/python:3.5-node-browsers
     steps:
       - checkout
-      - run: pip install numpy
+      - run: pip install numpy --user
       - save_cache:
           key: pip_cache
           paths:
